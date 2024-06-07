@@ -1,19 +1,137 @@
 body {
-  background: black;
-  color: aqua;
-}
-
-main {
-  float: left;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-aside {
-  float: right;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background: #887878;
+  overflow: hidden; /* Hide overflow */
+}
+p {
+  color: #fff;
+  font-family: "Irish Grover";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+h1 {
+  color: #353232;
+  font-family: "Irish Grover";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: center;
+  margin: 0px;
+  margin-bottom: 40px;
+  border-bottom: #353232 5px solid;
+}
+
+.rectangle {
+  position: absolute;
+  background: #353232;
+}
+
+.rectangle.top,
+.rectangle.bottom {
+  height: 41px;
+  width: 100%;
+}
+
+.rectangle.left,
+.rectangle.right {
+  height: 100%;
+  width: 15px;
+}
+
+.rectangle.top {
+  top: 0;
+}
+
+.rectangle.bottom {
+  bottom: 0;
+  background-color: #181616;
+}
+
+.rectangle.left {
+  left: 0;
+}
+
+.rectangle.right {
+  right: 0;
+}
+
+.rectangle.navBarBackground {
+  bottom: 2.57em;
+  height: 41px;
+  width: 100%;
+}
+
+.rectangle.navBar {
+  bottom: 2.57em;
+  background-color: #886f30;
+  height: 41px;
+  width: 70%;
+}
+
+.rectangle.homeBackground {
+  left: 2.5em;
+  bottom: 2.57em;
+  background-color: #886f30;
+  height: 41px;
+  width: 4%;
+}
+
+.rectangle.msgBackground {
+  right: 2.5em;
+  bottom: 2.57em;
+  background-color: #886f30;
+  height: 41px;
+  width: 4%;
+}
+.rectangle img {
+  position: absolute;
+  top: 8px; /* Adjust this value as needed */
+}
+.rectangle.verseBackground {
+  /* display: flex; */
+  width: 70vw;
+  height: 37vh;
+  bottom: 7em;
+  background: #886f30;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  width: 60vw;
+  height: 30vh;
+  top: 4em;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  background: #886f30;
+}
+
+.slide-out {
+  animation: slideOut 20ms ease-in forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }

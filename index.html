@@ -5,20 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/style.css" />
 </head>
 
 <body>
-    <main>
-        <h1>Hey</h1>
-        <p>This is just a simple webpage, i'm working on something a little more advanced but this'll do for now</p>
+    <div class="logo">
+        <img src="src/icons/Component 1.svg">
+    </div>
+    <div class="rectangle verseBackground">
+        <h1>jiro 13:2</h1>
+        <p>jahrlkwe werkfuo ajrop eiu qo, roiu33io(try clicking the message icon in the bottom right corner)</p>
+        <!-- <br> -->
+    </div>
+    <div class="rectangle navBarBackground"></div>
+    <a class="rectangle homeBackground">
+        <img src="src/icons/Home (2).svg">
+    </a>
+    <a class="rectangle msgBackground transition-link" href="\team.html">
+        <img src="src/icons/Vector.svg">
+    </a>
+    <div class="rectangle navBar"></div>
+    <div class="rectangle top"></div>
+    <div class="rectangle bottom"></div>
+    <div class="rectangle left"></div>
+    <div class="rectangle right"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').css('opacity', 1);
 
-    </main>
-    <aside>
-        <h2>New Design</h2>
-        <img height="222px" width="400px" src="src/img/NEW SITE!!.png">
-    </aside>
-    <script src="src/js/index.js"></script>
+            $('.transition-link').click(function (e) {
+                e.preventDefault();
+                $('body').addClass('slide-out');
+                console.log(e.currentTarget.href)
+                console.log(e.currentTarget)
+                if (e.target.href === undefined) {
+                    setTimeout(function () {
+                        window.location.href = e.currentTarget.href;
+                    }, 10000);
+                } else {
+                    setTimeout(function () {
+                        window.location.href = e.target.href;
+                    }, 70);
+
+
+                }
+            });
+        });
+    </script>
+
 </body>
+<footer class="footer"></footer>
 
 </html>

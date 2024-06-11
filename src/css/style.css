@@ -2,7 +2,7 @@ body {
   background: black;
  font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -39,11 +39,21 @@ section {
   margin: 50px;
   background-color: whitesmoke;
   color: #4b2727;
-  padding: 20px;
 }
 section h2 {
   background: #4b2727;
   color: whitesmoke;
   margin: 0;
 }
+section p {
+  margin: 20px
+}
 
+@media (max-width: 420px) {
+ header h1 {
+      font-size: 1.5em;
+    }
+asside {
+margine 10px
+}
+}

@@ -17,3 +17,20 @@ aside {
   align-items: center;
   justify-content: center;
 }
+header {
+  background: #4b2727;
+  padding: 20px 0;
+  text-align: center;
+}
+header h1{ 
+  margin: 0;
+  font-size: 2em;
+}
+
+section {
+  border: 13px solid #4b2727;
+  margin: 50px;
+  background-color: whitesmoke;
+  color: #4b2727;
+}
+
